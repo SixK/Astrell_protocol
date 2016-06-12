@@ -39,8 +39,8 @@ const unsigned long bit0_MAX = 2570;
 const unsigned long glitch_Length = 300;                  // Anything below this value is a glitch and will be ignored.
 
 // Interrupt variables
-volatile unsigned long fall_Time = 0;                              // Placeholder for microsecond time when last falling edge occured.
-volatile unsigned long rise_Time = 0;                              // Placeholder for microsecond time when last rising edge occured.
+volatile unsigned long fall_Time = 0;                              // Placeholder for microsecond time when last falling edge occurred.
+volatile unsigned long rise_Time = 0;                              // Placeholder for microsecond time when last rising edge occurred.
 volatile byte bit_Count = 0;                                       // Bit counter for received bits.
 volatile unsigned long build_Buffer[] = {0,0};                     // Placeholder last data packet being received.
 volatile unsigned long read_Buffer[] = {0,0};             // Placeholder last full data packet read.
